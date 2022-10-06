@@ -3,6 +3,16 @@ function init(){
     .then( res => res.json() )
     .then( data => callback(data) );
 
+    const aside = document.querySelector('aside');
+    aside.style = 'opacity:0'
+    aside.onclick = function(){
+        scrollTo({
+            left:0,
+            top:0,
+            behavior:'smooth'
+        })
+    }
+
     const elNav = document.querySelector('header'),
           elNavLogo = document.querySelector('header figure'),
           elNavHd = document.querySelector('.hdmenu'),
@@ -336,7 +346,7 @@ function init(){
 
     //TODO 함수실행 
     window.addEventListener('scroll',function(){
-        
+        (window.pageYOffset > window.innerHeight) ? aside.style = 'opacity:1' : aside.style = 'opacity:0';
         scrollNavi();
         Howmany();
         HowmanyBar();
