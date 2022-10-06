@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>브랜드 | 밀리의 서재</title>
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo_head/pvi.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114*114" href="img/logo_head/pvi.png">
+    
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<!-- TODO 로딩 애니메이션 -->
+<div id="load">
+    <div class="loader"></div>
+</div>
+<!-- TODO 네비게이터 -->
+<!-- <div class="navi" id="navi">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div> -->
+<!-- TODO 팝업창 -->
+<div class="popup" id="popup">
+    <article>
+        <form>
+            <div class="today">
+                <label>오늘 하루 동안 그만 보기</label>
+                <input type="checkbox" id="chked">
+            </div>
+            <div class="close" id="xbtn">닫기</div>
+        </form>
+        <h1>첫 달 무료로
+            독서 시작하기!</h1>
+        <h4>한 달 체험 후
+            이 모든게 9,900원?</h4>
+        <span>구독하기</span>
+        <img src="img/logo_head/model.png">
+    </article>
+</div>
+
+<!-- TODO 헤더  -->
+<header>
+    <figure><img src="img/icons/android-icon.png"></figure>
+    <div class="hdmenu">
+        <!-- <a href="login.html"><div>다운로드</div></a> -->
+        <a href="login.html"><div>로그인</div></a>
+    </div>
+</header>
+<main>
+    <!-- TODO 배너  -->
+    <div class="banner">
+        <div>
+            <div class="bg-1"></div>
+            <div class="bg-2"></div>
+        </div>
+        <img src="img/logo_head/title.png" class="bnimg-1">
+        <img src="img/logo_head/model.png" class="bnimg-2">
+        <img src="img/logo_head/밀리의 서재.png" class="bnimg-3">
+        <img src="img/logo_head/scroll2.png" class="bnimg-4">
+    </div>
+    
+    <!-- TODO 장점 -->
+    <div class="bestpoint">
+        <article>
+            <p class="title">밀리가 알려주는<br>전자책의 장점 3가지</p>
+            <p class="detail">전자책과 함께라면<br>좀 더 멋진 일상을 만들 수 있을 거에요</p>
+        </article>
+        <ul>
+            <li>
+                <img src="img/best/언제 어디서든 쉽고 빠르게.png">
+                <p>언제 어디서든 쉽고 빠르게</p>
+                <p>스마트폰에서도, PC에서도<br>언제 어디서든 나만의 독서를 즐기세요</p>
+            </li>
+            <li>
+                <img src="img/best/눈만 아프고_ 집중은 잘 안된다고_.png">
+                <p>눈만 아프고, 집중은 잘 안된다고?</p>
+                <p>글씨 크기, 줄간격, 배경색도 내 마음대로!<br>눈이 편한 독서를 시작해보세요</p>
+            </li>
+            <li>
+                <img src="img/best/쉽고 빠르게 쌓는 독서 기록.png">
+                <p>쉽고 빠르게 쌓는 독서 기록</p>
+                <p>기억하고 싶은 문장은 밑줄, 생각은 메모<br>나만의 독서노트를 만들어보세요</p>
+            </li>
+        </ul>
+    </div>
+    <!-- TODO 책보유량  -->
+    <div class="howmany">
+        <div class="hmcon-1">
+            <p class="title"><span class="countNo">100,000</span>권 중에<br>인생책이 없을까?</p>
+            <p class="detail">알고 있었죠?<br>책은 우리가 제일 많아요</p>
+        </div>
+        <div class="hmcon-2">
+            <div class="bar1">
+                <p>A사</p>
+            </div>
+            <div class="bar2">
+                <p>B사</p>
+            </div>
+            <div class="bar3" id="elBar">
+                <p>밀리의 서재</p>
+            </div>
+            <img src="img/100_000만권.png">
+        </div>
+    </div>
+    
+    <!-- TODO 베스트셀러  -->
+    <div class="bestseller">
+        <div class="title">심지어 10년치<br>베스트셀러까지</div>
+        <div class="detail">현재 기준 베스트 셀러 50% 보유<br>다른 곳보다 10배 이상</div>
+        <div class="besttab">
+            <p class="active">종합</p>
+            <p>트렌드</p>
+            <p>라이프</p>
+            <p>힐링</p>
+            <p>지적교양</p>
+            <p>소설</p>
+        </div>
+        <p class="minititle">&nbsp;8월의 베스트셀러</p>
+        <ul class="bst-1 bstlist active multiple-items">
+            <!--<li>
+                <img src="img/newbook/newbook-7.jpg">
+                <article class="bookdtl">
+                    <h5>입시를 알면 아이공부가 쉬워진다</h5>
+                    <span>47% | 243분</span>
+                </article>
+            </li> -->
+        </ul>
+        <ul class="bst-2 bstlist multiple-items"></ul>
+        <ul class="bst-3 bstlist multiple-items"></ul>
+        <ul class="bst-4 bstlist multiple-items"></ul>
+        <ul class="bst-5 bstlist multiple-items"></ul>
+        <ul class="bst-6 bstlist multiple-items"></ul>
+    </div>
+    
+    <!-- TODO 질문  -->
+    <div class="faq">
+        <div class="title">자주 묻는 질문</div>
+        <ul>
+            <li>
+                <div class="detailall">
+                    <div class="detail">안 쓰면 정말 환불해 주나요?</div>
+                    <div class="detail">⌵</div>
+                </div>
+                <p class="answer">물론입니다. 결제 후 콘텐츠 다운로드 및 열람을 하지 않으셨다면 전액 환불해 드리고 있어요.
+                    [밀리 > 관리 > 구독관리 > 구독내역] 에서 직접 환불이 가능하며,
+                    해결이 어려운 경우 고객센터로 문의해 주세요.</p>
+            </li>
+            <li>
+                <div class="detailall">
+                    <div class="detail">구독 중 해지 할 수 있나요? 수수료는 없나요?</div>
+                    <div class="detail">⌵</div>
+                </div>
+                <p class="answer">다음달 부터 결제되지 않도록 수수료 없이 언제든지 해지하실 수 있습니다.
+                    [밀리 > 관리 > 구독관리 > 자동결제 해지] 메뉴를 통해 기간에 상관없이 직접 가능해요.</p>
+            </li>
+            <li>
+                <div class="detailall">
+                    <div class="detail">첫 달 무료 혜택은 누구나 받을 수 있나요?</div>
+                    <div class="detail">⌵</div>
+                </div>
+                <p class="answer">네, 밀리 회원이라면 누!구!나! 첫 정기구독 신청 시 1회 제공됩니다.
+                    아직 신청하지 않으셨다면 바로 구독신청으로 혜택을 받아 보세요.</p>
+            </li>
+            <li>
+                <div class="detailall">
+                    <div class="detail">구독 상품 종류를 알려주세요.</div>
+                    <div class="detail">⌵</div>
+                </div>
+                <p class="answer">밀리에서는 매월/매년 동일한 날짜에 이용금액을 결제하는 정기구독 상품이 있습니다.
+
+                    - 전자책 월/연 정기구독
+                    밀리에서 제공하는 콘텐츠를 무제한 보는 서비스(종이책 전용도서 제외)
+                    
+                    - 종이책 월/연 정기구독
+                    밀리의 모든 콘텐츠를 무제한 볼 수 있으며 격월로 밀리 오리지널 종이책을 배송받는 서비스 (밀리 오리지널 종이책은 밀리에서만 보실 수 있는 한정판 도서)
+                    
+                    보다 자세한 내용은 [상품 안내 페이지]에서 확인 부탁드립니다.</p>
+            </li>
+            <li>
+                <div class="detailall">
+                    <div class="detail">어떤 기기에서 사용할 수 있나요?</div>
+                    <div class="detail">⌵</div>
+                </div>
+                <p class="answer">아래 기기와 버전에서 밀리를 사용할 수 있습니다.
+
+                    - 휴대폰 / 태블릿 : iOS11, Android 6 이상 지원
+                    - PC : Mac Yosemite, Window 7 이상 지원
+                    - E ink : Android 4.4 이상 지원
+                    (크레마 그랑데, 크레마 카르타G, 이노스페이스원 공식 판매 기기, 교보 Sam 7.8 등)</p>
+            </li>
+        </ul>
+    </div>
+</main>
+
+<!-- TODO 푸터  -->
+<footer>
+    <article>
+        <h5>(주) 밀리의 서재</h5>
+        <div>사업자 정보 닫기 ⌵</div>
+        <div class="ft-close">
+            <div>대표이사 : 서영택 사업자등록번호 : 423-88-00370</div>
+            <div>통신판매업 신고번호 : 2016-서울마포-2012호 주소 : 서울특별시 마포구 양화로 45, 16층 (메세나폴리스 세아타워)</div>
+            <div>고객정보보호 책임자 : 김주영(jay@millie.town) 마케팅 제휴 문의 : business@millie.town</div>
+        </div>
+        <ul>
+            <li>고객센터 ></li>
+            <li>이용약관 ></li>
+            <li>개인정보처리방침 ></li>
+            <li>뷰어 다운로드 ></li>
+            <li>B2B 문의 ></li>
+            <li>콘텐츠 제휴문의 ></li>
+        </ul>
+        <div>Copyright © 2021 밀리의 서재 All Rights Reserved.</div>
+    </article>
+</footer>
+
+<aside> Top </aside>
+
+
+</body>
+</html>
